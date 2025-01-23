@@ -1,0 +1,20 @@
+version: "1"
+datasources: 
+  - name: "depoq"
+    type: mariadb
+    config:
+      host: localhost
+      port: 3300
+      username: mariadb
+      password: mariadb
+      database_name: db_app
+      # parameters:
+      #   parseTime: "true"
+      conn_max_idle_time: 10
+      conn_max_lifetime: 10
+      max_open_conns: 10
+      max_idle_conns: 10
+runner:
+  paths:
+    - runners
+      

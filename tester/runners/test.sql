@@ -1,0 +1,1 @@
+SELECT id FROM account WHERE account_type_id = {{ .account_type_id }};
